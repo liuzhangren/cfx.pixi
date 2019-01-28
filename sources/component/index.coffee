@@ -20,7 +20,7 @@ export default (line) =>
     @data = null
   onDragMove = () -> 
     if @dragging
-      totalContainer.addChild icon onDragStart, onDragEnd, onDragMove
+      totalContainer.addChild icon onDragStart, onDragEnd, onDragMove, line
       newPosition = @data.getLocalPosition @parent
       @x = newPosition.x
       @y = newPosition.y
